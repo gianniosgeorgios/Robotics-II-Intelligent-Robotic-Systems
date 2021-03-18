@@ -27,3 +27,14 @@ Multyplyng consecutively these tranformation matrixes, we compute Homogeneous Tr
 
 ### Step 3: Path Planning
 
+We define a 3rd order polynomial that describes the position of end efector each time, according to standards. The movement breaks to two tasks
+
+#### Task 1: Straight movemet of End Effector
+
+The general equation that describes this task is: 
+
+#### Task 2: Αvoiding moving obstacles
+
+The general equation that describes this task is: 
+
+## Simulation 
