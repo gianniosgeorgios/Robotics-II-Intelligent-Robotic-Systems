@@ -56,7 +56,8 @@ The general equation that describes this task is:
 
 ## Simulation 
 
+As I said before the analysis about controlles has been included to `controller.py` file. 
 
-Now we have all we need to implement robotics' controller. Check kinematics.py file .In controller.py also add a PI Controller to avoid mechanical vibration. Starting Gazebo simulation we notice that the end efector perform a straight movement (constant values y-z coordinates and "smooth" periodic movement of x-cordinate (described by cosine function)  
+Starting Gazebo simulation we notice that the end efector performs a straight movement (constant values y-z coordinates and "smooth" periodic movement of x-cordinate (described by cosine function)  
 
 ![Screenshot from 2021-03-18 23-54-13](https://user-images.githubusercontent.com/50829499/111702780-77dc9d80-8845-11eb-91ef-8ba2202a7716.png)
