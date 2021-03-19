@@ -14,8 +14,8 @@ The Robotic Arm we study is [xArm-7](https://www.youtube.com/watch?v=xaOWXSACNXs
 
 To implement this project we needed:
 
-* **ROS environment**: The Robot Operating System (ROS) is an open-source framework that helps researchers and developers build and reuse code between robotics applications
-* **Gazebo**: Gazebo is an open-source 3D robotics simulator
+* **ROS environment**: The Robot Operating System ([ROS](https://www.google.com/search?channel=fs&client=ubuntu&q=ROS)) is an open-source framework that helps researchers and developers build and reuse code between robotics applications
+* **Gazebo**: [Gazebo](http://gazebosim.org/tutorials?tut=ros_overview) is an open-source 3D robotics simulator
 
 ## Theorytical Analysis 
 
@@ -27,7 +27,7 @@ From Denavit–Hartenberg parameters (each line of above matrix), we compute Tra
 
 ### Step 2: Finding Jacobian Matrix for robotic arm
 
-Multyplyng consecutively these tranformation matrixes, we compute Homogeneous Transformation Matrix from start to end joint. Keeping only the last column that corresponds to pe_x, pe_y, pe_z variables, we are ready to compute Jacobian using the form:
+Multyplyng consecutively these tranformation matrixes, we compute **Homogeneous Transformation Matrix** from start to end joint. Keeping only the last column that corresponds to `pe_x, pe_y, pe_z` variables, we are ready to compute Jacobian using the form:
 
 ![Screenshot from 2021-03-18 23-59-42](https://user-images.githubusercontent.com/50829499/111703311-24b71a80-8846-11eb-8e42-41d0dcf07c15.png)
 
@@ -52,12 +52,12 @@ The general equation that describes this task is:
 
 ![Screenshot from 2021-03-18 23-44-30](https://user-images.githubusercontent.com/50829499/111701875-2089fd80-8844-11eb-958d-df93645d99d3.png)
 
-*For further information,about these tasks, check Report.pdf*
+*For further information,about these tasks, check `Report.pdf` *
 
 ## Simulation 
 
 As I said before the analysis about controlles has been included to `controller.py` file. 
 
-Starting Gazebo simulation we notice that the end efector performs a straight movement (constant values y-z coordinates and "smooth" periodic movement of x-cordinate (described by cosine function)  
+Starting Gazebo simulation we notice that the end efector performs a straight movement (constant values y-z coordinates and "smooth" periodic movement of x-cordinate (described by cosine function)): 
 
 ![Screenshot from 2021-03-18 23-54-13](https://user-images.githubusercontent.com/50829499/111702780-77dc9d80-8845-11eb-91ef-8ba2202a7716.png)
