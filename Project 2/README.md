@@ -4,19 +4,19 @@
 
 ## Abstract 
 
-The main purpose of this lab excerise was to implement wall followin algorithm for an autonomus mobile robot. This kind of movement is based only to sensor fusion.
+The main purpose of this lab excerise was to implement wall following algorithm for an autonomus mobile robot. This kind of movement is based only to sensor fusion.
 
 ## Mobile Robot 
 
-The mobile robot that we studied was differential-drive is equipped with:
+The mobile robot that we studied was differential-drive and is equipped with:
 * Two wheels with diameter equal to 20cm
-* Five ultrasound sensors for distance measurement
+* Five ultrasonic sensors for distance measurement
 * One IMU  (Inertial Measurement  Unit) 9 degrees' of freedom for linear- angular velocity/acceleration measurement
 
 
 ## Algorithm Description
 
-The algorithm is simply transitions between three or even better two states
+The algorithm is simply transitions between three or even better two states:
 
 ### State 1: Wall Approach (One time, from start position)
 
@@ -32,7 +32,7 @@ As long as we measure the value of front sensor (>= 0.5 cm) , we have:
 
 ![Screenshot from 2021-03-19 14-56-33](https://user-images.githubusercontent.com/50829499/111783993-87023080-88c3-11eb-8ccd-165068f7277f.png)
 
-As long as we measure values of three sensors and we don't reach some target distances (described below), we have:
+As long as we don't reach some target distances (described below), we have:
 
 * Zero linear velocity
 * Constant angular velocity
