@@ -51,7 +51,7 @@ Using an PD controller, we achieve straight forward movement alongside the wall.
 
 ## Simulation 
 
-It is obvious from below plots that during the wall following the mobile robot moves alongside the wall with little (negligible) variations. As we see the distances that are measured from sensors are constant:
+It is obvious from below plots that during the wall following the mobile robot moves alongside the wall with little (insignificant) variations. As we see the distances that are measured from sensors are constant:
 
 ![Screenshot from 2021-03-19 14-57-00](https://user-images.githubusercontent.com/50829499/111784209-cb8dcc00-88c3-11eb-917c-567b0e4b9b6c.png)
 
