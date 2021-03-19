@@ -4,4 +4,4 @@ A repository for Robotics 2 Course in ECE NTUA
 
 ## Project 1: Κinematic control of a redundant manipulator
 
-## Project 2:
+## Project 2: Wall following performance of a mobile autonomus robot
