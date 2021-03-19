@@ -4,7 +4,9 @@
 
 ## Abstract
 
-The main purpose of this excerise was to implement an algorithm accordic to this, the end effector of a robotic arm will perform a periodic straight movemet but also avoids moving obstacles (red and green columns in the above image).
+The main purpose of this excerise was to implement an algorithm accordic to this, the end effector of a robotic arm will perform a periodic straight movemet but also avoids moving obstacles (red and green columns in the above image). Click here to watch [demo](https://user-images.githubusercontent.com/50829499/111825598-4ff64400-88f0-11eb-92ef-dbccfc999726.mp4)
+
+
 
 ## Robotic Arm 
 
