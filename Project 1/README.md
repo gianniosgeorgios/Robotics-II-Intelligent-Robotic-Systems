@@ -33,6 +33,8 @@ Multyplyng consecutively these tranformation matrixes, we compute Homogeneous Tr
 
 This became easier using matlab code `Jacobian.m`
 
+The kinematic analysis (Jacobian & Homogeneous Transformation Matrices computation) has been inluded to `kinematics.py` file. This code is usefull for `controller.py`,which is responsible for Path Planning and Two Different Tasks.
+
 ### Step 3: Path Planning
 
 We define a 3rd order polynomial that describes the position of end efector each time, according to standards. The movement breaks to two tasks
