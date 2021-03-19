@@ -37,6 +37,7 @@ As long as we measure values of three sensors and we don't reach some target dis
 * Zero linear velocity
 * Constant angular velocity
 
+![Screenshot from 2021-03-19 15-00-39](https://user-images.githubusercontent.com/50829499/111784280-ebbd8b00-88c3-11eb-8899-f10429814947.png)
 
 ### State 3: Wall Following 
 
@@ -52,7 +53,8 @@ Using an PD controller, we achieve straight forward movement alongside the wall.
 
 It is obvious from below plots that during the wall following the mobile robot moves alongside the wall with little (negligible) variations. As we see the distances that are measured from sensors are constant:
 
-![Screenshot from 2021-03-19 14-56-02](https://user-images.githubusercontent.com/50829499/111783944-72be3380-88c3-11eb-96d8-da211dc41940.png)
+![Screenshot from 2021-03-19 14-57-00](https://user-images.githubusercontent.com/50829499/111784209-cb8dcc00-88c3-11eb-917c-567b0e4b9b6c.png)
+
 
 
 
