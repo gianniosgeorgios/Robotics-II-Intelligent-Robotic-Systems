@@ -4,13 +4,13 @@
 
 ## Abstract
 
-The main purpose of this excerise was to implement an algorithm accordic to this, the end effector of a robotic arm will perform a periodic straight movemet but also avoids moving obstacles (red and green columns in the above image). Click here to watch [demo](https://user-images.githubusercontent.com/50829499/111825598-4ff64400-88f0-11eb-92ef-dbccfc999726.mp4)
+The main purpose of this excerise was to implement an algorithm according to which the end effector of a robotic arm will perform a periodic straight movement, avoiding at the same time moving obstacles (red and green columns in the above image). Click here to watch [demo](https://user-images.githubusercontent.com/50829499/111825598-4ff64400-88f0-11eb-92ef-dbccfc999726.mp4)
 
 
 
 ## Robotic Arm 
 
-The Robotic Arm we study is [xArm-7](https://www.youtube.com/watch?v=xaOWXSACNXs). It is a seven degrees of freedom arm, which brings human-like flexibility, and it is perfect for emerging industries such as AI research, service automation and filming, etc.
+The Robotic Arm we studied is [xArm-7](https://www.youtube.com/watch?v=xaOWXSACNXs). THe arm offers seven degrees of freedom, which brings human-like flexibility, and it is perfect for emerging industries such as AI research, service automation and filming, etc.
 
 ## Tools 
 
@@ -29,17 +29,17 @@ From Denavit–Hartenberg parameters (each line of above matrix), we compute Tra
 
 ### Step 2: Finding Jacobian Matrix for robotic arm
 
-Multyplyng consecutively these tranformation matrixes, we compute **Homogeneous Transformation Matrix** from start to end joint. Keeping only the last column that corresponds to `pe_x, pe_y, pe_z` variables, we are ready to compute Jacobian using the form:
+Multiplying consecutively these tranformation matrixes, we compute **Homogeneous Transformation Matrix** from start to end joint. Keeping only the last column that corresponds to `pe_x, pe_y, pe_z` variables, we are ready to compute Jacobian using the form:
 
 ![Screenshot from 2021-03-18 23-59-42](https://user-images.githubusercontent.com/50829499/111703311-24b71a80-8846-11eb-8e42-41d0dcf07c15.png)
 
 This became easier using matlab code `Jacobian.m`
 
-The kinematic analysis (Jacobian & Homogeneous Transformation Matrices computation) has been inluded to `kinematics.py` file. This code is usefull for `controller.py`,which is responsible for Path Planning and Two Different Tasks.
+The kinematic analysis (Jacobian & Homogeneous Transformation Matrices computation) has been included in `kinematics.py` file. This code is useful for `controller.py`,which is responsible for Path Planning and Two Different Tasks.
 
 ### Step 3: Path Planning
 
-We define a 3rd order polynomial that describes the position of end efector each time, according to standards. The movement breaks to two tasks
+We define a 3rd order polynomial that describes the position of end efector each time, according to standards. The movement breaks into two tasks
 
 #### Task 1: Straight movemet of End Effector
 
@@ -58,7 +58,7 @@ The general equation that describes this task is:
 
 ## Simulation 
 
-As I said before the analysis about controlles has been included to `controller.py` file. 
+As I said before the analysis about controller has been included in `controller.py` file. 
 
 Starting Gazebo simulation we notice that the end efector performs a straight movement (constant values y-z coordinates and "smooth" periodic movement of x-cordinate (described by cosine function)): 
 
